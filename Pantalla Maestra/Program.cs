@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Login;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,7 @@ namespace Pantalla_Maestra
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new fmrTablaClientes());
+            Application.Run(new fmrLogin());
         }
     }
 }

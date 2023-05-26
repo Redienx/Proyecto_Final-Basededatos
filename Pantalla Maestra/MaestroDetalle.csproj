@@ -50,6 +50,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="wMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="wMenu.designer.cs">
+      <DependentUpon>wMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="wActualizarClientes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,11 +80,23 @@
     <Compile Include="wComprarProducto.Designer.cs">
       <DependentUpon>wComprarProducto.cs</DependentUpon>
     </Compile>
+    <Compile Include="wLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="wLogin.designer.cs">
+      <DependentUpon>wLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="wPagarCuota.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="wPagarCuota.Designer.cs">
       <DependentUpon>wPagarCuota.cs</DependentUpon>
+    </Compile>
+    <Compile Include="wRegistro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="wRegistro.Designer.cs">
+      <DependentUpon>wRegistro.cs</DependentUpon>
     </Compile>
     <Compile Include="wTablaClientes.cs">
       <SubType>Form</SubType>
@@ -94,6 +112,9 @@
     <Compile Include="wTablaCuotas.Designer.cs">
       <DependentUpon>wTablaCuotas.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="wMenu.resx">
+      <DependentUpon>wMenu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="wActualizarClientes.resx">
       <DependentUpon>wActualizarClientes.cs</DependentUpon>
     </EmbeddedResource>
@@ -106,8 +127,14 @@
     <EmbeddedResource Include="wComprarProducto.resx">
       <DependentUpon>wComprarProducto.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="wLogin.resx">
+      <DependentUpon>wLogin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="wPagarCuota.resx">
       <DependentUpon>wPagarCuota.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="wRegistro.resx">
+      <DependentUpon>wRegistro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="wTablaClientes.resx">
       <DependentUpon>wTablaClientes.cs</DependentUpon>
