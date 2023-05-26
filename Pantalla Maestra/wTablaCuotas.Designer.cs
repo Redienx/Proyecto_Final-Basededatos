@@ -41,8 +41,10 @@
             this.btnPagarCuota = new System.Windows.Forms.Button();
             this.btnComprarProducto = new System.Windows.Forms.Button();
             this.dtgCuotas = new System.Windows.Forms.DataGridView();
-            this.btnClientes = new System.Windows.Forms.Button();
             this.rbnID_Producto = new System.Windows.Forms.RadioButton();
+            this.btnExportar = new System.Windows.Forms.Button();
+            this.btnImportar = new System.Windows.Forms.Button();
+            this.btnInformes = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtgCuotas)).BeginInit();
             this.SuspendLayout();
             // 
@@ -141,7 +143,7 @@
             // 
             // btnActualizarBase
             // 
-            this.btnActualizarBase.Location = new System.Drawing.Point(444, 12);
+            this.btnActualizarBase.Location = new System.Drawing.Point(479, 12);
             this.btnActualizarBase.Name = "btnActualizarBase";
             this.btnActualizarBase.Size = new System.Drawing.Size(126, 49);
             this.btnActualizarBase.TabIndex = 23;
@@ -151,7 +153,7 @@
             // 
             // btnPagarCuota
             // 
-            this.btnPagarCuota.Location = new System.Drawing.Point(576, 12);
+            this.btnPagarCuota.Location = new System.Drawing.Point(611, 12);
             this.btnPagarCuota.Name = "btnPagarCuota";
             this.btnPagarCuota.Size = new System.Drawing.Size(126, 49);
             this.btnPagarCuota.TabIndex = 21;
@@ -161,7 +163,7 @@
             // 
             // btnComprarProducto
             // 
-            this.btnComprarProducto.Location = new System.Drawing.Point(303, 12);
+            this.btnComprarProducto.Location = new System.Drawing.Point(338, 12);
             this.btnComprarProducto.Name = "btnComprarProducto";
             this.btnComprarProducto.Size = new System.Drawing.Size(126, 49);
             this.btnComprarProducto.TabIndex = 20;
@@ -181,16 +183,6 @@
             this.dtgCuotas.TabIndex = 19;
             this.dtgCuotas.CurrentCellChanged += new System.EventHandler(this.dtgCuotas_CurrentCellChanged);
             // 
-            // btnClientes
-            // 
-            this.btnClientes.Location = new System.Drawing.Point(157, 12);
-            this.btnClientes.Name = "btnClientes";
-            this.btnClientes.Size = new System.Drawing.Size(126, 49);
-            this.btnClientes.TabIndex = 37;
-            this.btnClientes.Text = "Tabla Clientes";
-            this.btnClientes.UseVisualStyleBackColor = true;
-            this.btnClientes.Click += new System.EventHandler(this.btnClientes_Click);
-            // 
             // rbnID_Producto
             // 
             this.rbnID_Producto.AutoSize = true;
@@ -202,13 +194,42 @@
             this.rbnID_Producto.Text = "ID_Productos";
             this.rbnID_Producto.UseVisualStyleBackColor = true;
             // 
+            // btnExportar
+            // 
+            this.btnExportar.Location = new System.Drawing.Point(47, 12);
+            this.btnExportar.Name = "btnExportar";
+            this.btnExportar.Size = new System.Drawing.Size(88, 49);
+            this.btnExportar.TabIndex = 41;
+            this.btnExportar.Text = "Exportar";
+            this.btnExportar.UseVisualStyleBackColor = true;
+            // 
+            // btnImportar
+            // 
+            this.btnImportar.Location = new System.Drawing.Point(141, 12);
+            this.btnImportar.Name = "btnImportar";
+            this.btnImportar.Size = new System.Drawing.Size(88, 49);
+            this.btnImportar.TabIndex = 40;
+            this.btnImportar.Text = "Importar";
+            this.btnImportar.UseVisualStyleBackColor = true;
+            // 
+            // btnInformes
+            // 
+            this.btnInformes.Location = new System.Drawing.Point(239, 12);
+            this.btnInformes.Name = "btnInformes";
+            this.btnInformes.Size = new System.Drawing.Size(88, 49);
+            this.btnInformes.TabIndex = 39;
+            this.btnInformes.Text = "Informes";
+            this.btnInformes.UseVisualStyleBackColor = true;
+            // 
             // fmrTablaCuotas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(829, 502);
+            this.Controls.Add(this.btnExportar);
+            this.Controls.Add(this.btnImportar);
+            this.Controls.Add(this.btnInformes);
             this.Controls.Add(this.rbnID_Producto);
-            this.Controls.Add(this.btnClientes);
             this.Controls.Add(this.btnPrimero);
             this.Controls.Add(this.btnUltimo);
             this.Controls.Add(this.btnAnterior);
@@ -246,7 +267,9 @@
         private System.Windows.Forms.Button btnPagarCuota;
         private System.Windows.Forms.Button btnComprarProducto;
         public System.Windows.Forms.DataGridView dtgCuotas;
-        private System.Windows.Forms.Button btnClientes;
         private System.Windows.Forms.RadioButton rbnID_Producto;
+        private System.Windows.Forms.Button btnExportar;
+        private System.Windows.Forms.Button btnImportar;
+        private System.Windows.Forms.Button btnInformes;
     }
 }

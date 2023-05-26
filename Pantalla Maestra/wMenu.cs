@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using Pantalla_Maestra;
 
 namespace menu
 {
@@ -70,9 +71,45 @@ namespace menu
             forhijo.Show();
 
         }
+
+        private void formRegistro(object formhijo)
+        {
+            if (this.pnl_contenedor.Controls.Count > 0)
+                this.pnl_contenedor.Controls.RemoveAt(0);
+            Form forhijo = formhijo as Form;
+            forhijo.TopLevel = false;
+            forhijo.Dock = DockStyle.Fill;
+            this.pnl_contenedor.Controls.Add(forhijo);
+            this.pnl_contenedor.Tag = forhijo;
+            forhijo.Show();
+
+        }
+        private void formCuota(object formhijo)
+        {
+            if (this.pnl_contenedor.Controls.Count > 0)
+                this.pnl_contenedor.Controls.RemoveAt(0);
+            Form forhijo = formhijo as Form;
+            forhijo.TopLevel = false;
+            forhijo.Dock = DockStyle.Fill;
+            this.pnl_contenedor.Controls.Add(forhijo);
+            this.pnl_contenedor.Tag = forhijo;
+            forhijo.Show();
+
+        }
+
         private void btn_productos_Click(object sender, EventArgs e)
         {
+            formproduc(new fmrTablaProductos());
+        }
 
+        private void btn_Registros_Click(object sender, EventArgs e)
+        {
+            formRegistro(new fmrTablaClientes());
+        }
+
+        private void btn_cuotas_Click(object sender, EventArgs e)
+        {
+            formCuota(new fmrTablaCuotas());
         }
     }
 }

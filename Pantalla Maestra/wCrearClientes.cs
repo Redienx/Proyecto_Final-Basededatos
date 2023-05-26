@@ -17,8 +17,7 @@ namespace Pantalla_Maestra
     public partial class fmrCrearClientes : Form
     {
         // Variables de clase
-        string Nombre, Apellido, Celular, Correo;
-        int Edad;
+        string Usuario, Contrasena, Rol, Nombre, Apellido, Telefono, Correo, Edad;
 
         /// <summary>
         /// Constructor de la clase fmrCrearClientes.
@@ -33,6 +32,23 @@ namespace Pantalla_Maestra
         /// Evento que se activa al presionar una tecla en el campo de texto "Edad".
         /// Permite solo la entrada de dígitos en el campo de texto.
         /// </summary>
+        /// 
+
+        public void limpiartxt() 
+        {
+            // Limpiar los campos de texto
+            txtUsuario.Text = string.Empty;
+            txtContrasena.Text = string.Empty;
+            txtRol.Text = string.Empty;
+            txtNombre.Text = string.Empty;
+            txtApellido.Text = string.Empty;
+            txtEdad.Text = string.Empty;
+            txtTelefono.Text = string.Empty;
+            txtCorreo.Text = string.Empty;
+
+            // Cerrar el formulario
+            this.Close();
+        }
         private void txtEdad_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
@@ -65,10 +81,13 @@ namespace Pantalla_Maestra
             cmd_sqlite = Conexion_sqlite.CreateCommand();
             try
             {
+                Usuario = txtUsuario.Text;
+                Contrasena = txtContrasena.Text;
+                Rol = txtRol.Text;
                 Nombre = txtNombre.Text;
                 Apellido = txtApellido.Text;
-                Edad = int.Parse(txtEdad.Text);
-                Celular = txtCelular.Text;
+                Edad = txtEdad.Text;
+                Telefono = txtTelefono.Text;
                 Correo = txtCorreo.Text;
             }
             catch (Exception ex)
@@ -76,22 +95,23 @@ namespace Pantalla_Maestra
                 MessageBox.Show("Los valores no pueden ser nulos. Por favor, llena todos los campos.");
             }
 
+            string RolS = Rol.ToLower();
+            
             // Ejecutar la consulta de inserción en la base de datos
-            cmd_sqlite.CommandText = $"INSERT INTO tblClientes(Nombre, Apellido, Edad, Celular, Correo) VALUES('{Nombre}', '{Apellido}', '{Edad}', '{Celular}', '{Correo}')";
-            cmd_sqlite.ExecuteNonQuery();
+            try
+            {
+                cmd_sqlite.CommandText = $"INSERT INTO tblRegistros (Usuario, Contraseña, Rol, Nombres, Apellidos, Edad, Telefono, Correo) VALUES('{Usuario}', '{Contrasena}', '{RolS}', '{Nombre}', '{Apellido}', '{Edad}', '{Telefono}', '{Correo}')";
+                cmd_sqlite.ExecuteNonQuery();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("El usuario ya existe.");
+            }
 
             // Cerrar la conexión a la base de datos
             Conexion_sqlite.Close();
 
-            // Limpiar los campos de texto
-            txtNombre.Text = null;
-            txtApellido.Text = null;
-            txtEdad.Text = null;
-            txtCelular.Text = null;
-            txtCorreo.Text = null;
-
-            // Cerrar el formulario
-            this.Close();
+            limpiartxt();
         }
 
         /// <summary>
@@ -100,15 +120,7 @@ namespace Pantalla_Maestra
         /// </summary>
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            // Limpiar los campos de texto
-            txtNombre.Text = null;
-            txtApellido.Text = null;
-            txtEdad.Text = null;
-            txtCelular.Text = null;
-            txtCorreo.Text = null;
-
-            // Cerrar el formulario
-            this.Close();
+            limpiartxt();
         }
     }
 }

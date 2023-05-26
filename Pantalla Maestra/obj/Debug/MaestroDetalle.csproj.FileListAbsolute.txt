@@ -56,3 +56,7 @@ C:\Users\Julian\Source\Repos\Proyecto_Final-Basededatos\Pantalla Maestra\bin\Deb
 C:\Users\Julian\Source\Repos\Proyecto_Final-Basededatos\Pantalla Maestra\bin\Debug\Pantalla Maestra.exe
 C:\Users\Julian\Source\Repos\Proyecto_Final-Basededatos\Pantalla Maestra\bin\Debug\Pantalla Maestra.pdb
 C:\Users\Julian\Source\Repos\Proyecto_Final-Basededatos\Pantalla Maestra\obj\Debug\MaestroDetalle.csproj.CopyComplete
+C:\Users\Julian\Source\Repos\Proyecto_Final-Basededatos\Pantalla Maestra\obj\Debug\Pantalla_Maestra.fmrTablaProductos.resources
+C:\Users\Julian\Source\Repos\Proyecto_Final-Basededatos\Pantalla Maestra\obj\Debug\Pantalla_Maestra.fmrActualizarProducto.resources
+C:\Users\Julian\Source\Repos\Proyecto_Final-Basededatos\Pantalla Maestra\obj\Debug\Pantalla_Maestra.fmrCrearProducto.resources
+C:\Users\Julian\Source\Repos\Proyecto_Final-Basededatos\Pantalla Maestra\obj\Debug\Pantalla_Maestra.fmrBorrarProducto.resources

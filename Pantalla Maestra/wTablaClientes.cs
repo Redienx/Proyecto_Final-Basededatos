@@ -9,10 +9,6 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Finisar.SQLite;
 
-///<summary>
-///Codigo Hecho por Sneider
-///La finalidad es Realizar el CRUD en una pantalla Maestra
-/// </summary>
 
 namespace Pantalla_Maestra
 {
@@ -45,7 +41,7 @@ namespace Pantalla_Maestra
             }
 
             // Consulta para obtener todos los registros de la tabla de clientes
-            string Consulta = "SELECT * from tblClientes";
+            string Consulta = "SELECT ID, Nombres, Apellidos, Edad, Telefono, Correo FROM tblRegistros WHERE Rol != 'administrador'";
             // Ejecutar la consulta y llenar un DataTable con los resultados
             SQLiteDataAdapter dataAdapter_sqlite = new SQLiteDataAdapter(Consulta, Conexion_sqlite);
             DataTable dt = new DataTable();
@@ -73,7 +69,7 @@ namespace Pantalla_Maestra
                 MessageBox.Show("No se encontró la base de datos");
             }
 
-            string Consulta = "SELECT * from tblClientes";
+            string Consulta = "SELECT ID, Nombres, Apellidos, Edad, Telefono, Correo FROM tblRegistros WHERE Rol != 'administrador'";
             SQLiteDataAdapter dataAdapter_sqlite = new SQLiteDataAdapter(Consulta, Conexion_sqlite);
             DataTable dt = new DataTable();
             dataAdapter_sqlite.Fill(dt);
@@ -104,7 +100,7 @@ namespace Pantalla_Maestra
             {
                 try
                 {
-                    string Consulta = "SELECT * from tblClientes WHERE ID = " + txtBuscar.Text + "";
+                    string Consulta = "SELECT ID, Nombres, Apellidos, Edad, Telefono, Correo FROM tblRegistros WHERE Rol != 'administrador' AND ID = " + txtBuscar.Text + "";
                     SQLiteDataAdapter dataAdapter_sqlite = new SQLiteDataAdapter(Consulta, Conexion_sqlite);
                     DataTable dt = new DataTable();
                     dataAdapter_sqlite.Fill(dt);
@@ -123,7 +119,7 @@ namespace Pantalla_Maestra
             {
                 try
                 {
-                    string Consulta = "SELECT * from tblClientes WHERE Nombre = '" + txtBuscar.Text + "'";
+                    string Consulta = "SELECT ID, Nombres, Apellidos, Edad, Telefono, Correo FROM tblRegistros WHERE Rol != 'administrador' AND Nombres = '" + txtBuscar.Text + "'";
                     SQLiteDataAdapter dataAdapter_sqlite = new SQLiteDataAdapter(Consulta, Conexion_sqlite);
                     DataTable dt = new DataTable();
                     dataAdapter_sqlite.Fill(dt);
@@ -142,7 +138,7 @@ namespace Pantalla_Maestra
             {
                 try
                 {
-                    string Consulta = "SELECT * from tblClientes WHERE Apellido = '" + txtBuscar.Text + "'";
+                    string Consulta = "SELECT ID, Nombres, Apellidos, Edad, Telefono, Correo FROM tblRegistros WHERE Rol != 'administrador'  AND Apellidos = '" + txtBuscar.Text + "'";
                     SQLiteDataAdapter dataAdapter_sqlite = new SQLiteDataAdapter(Consulta, Conexion_sqlite);
                     DataTable dt = new DataTable();
                     dataAdapter_sqlite.Fill(dt);
@@ -161,7 +157,7 @@ namespace Pantalla_Maestra
             {
                 try
                 {
-                    string Consulta = "SELECT * from tblClientes WHERE Edad = " + txtBuscar.Text + "";
+                    string Consulta = "SELECT ID, Nombres, Apellidos, Edad, Telefono, Correo FROM tblRegistros WHERE Rol != 'administrador' AND Edad = '" + txtBuscar.Text + "'";
                     SQLiteDataAdapter dataAdapter_sqlite = new SQLiteDataAdapter(Consulta, Conexion_sqlite);
                     DataTable dt = new DataTable();
                     dataAdapter_sqlite.Fill(dt);
@@ -180,7 +176,7 @@ namespace Pantalla_Maestra
             {
                 try
                 {
-                    string Consulta = "SELECT * from tblClientes WHERE Celular = '" + txtBuscar.Text + "'";
+                    string Consulta = "SELECT ID, Nombres, Apellidos, Edad, Telefono, Correo FROM tblRegistros WHERE Rol != 'administrador' AND Telefono = '" + txtBuscar.Text + "'";
                     SQLiteDataAdapter dataAdapter_sqlite = new SQLiteDataAdapter(Consulta, Conexion_sqlite);
                     DataTable dt = new DataTable();
                     dataAdapter_sqlite.Fill(dt);
@@ -199,7 +195,7 @@ namespace Pantalla_Maestra
             {
                 try
                 {
-                    string Consulta = "SELECT * from tblClientes WHERE Correo = '" + txtBuscar.Text + "'";
+                    string Consulta = "SELECT ID, Nombres, Apellidos, Edad, Telefono, Correo FROM tblRegistros WHERE Rol != 'administrador' AND Correo = '" + txtBuscar.Text + "'";
                     SQLiteDataAdapter dataAdapter_sqlite = new SQLiteDataAdapter(Consulta, Conexion_sqlite);
                     DataTable dt = new DataTable();
                     dataAdapter_sqlite.Fill(dt);
@@ -281,12 +277,6 @@ namespace Pantalla_Maestra
         private void btnUltimo_Click(object sender, EventArgs e)
         {
             dtgUsuarios.CurrentCell = dtgUsuarios.Rows[dtgUsuarios.RowCount - 1].Cells[0];
-        }
-
-        private void btnCuotas_Click(object sender, EventArgs e)
-        {
-            fmrTablaCuotas fmrTablaCuotas = new fmrTablaCuotas();
-            fmrTablaCuotas.Show();
         }
     }
 }

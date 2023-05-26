@@ -46,7 +46,9 @@
             this.btnAnterior = new System.Windows.Forms.Button();
             this.btnUltimo = new System.Windows.Forms.Button();
             this.btnPrimero = new System.Windows.Forms.Button();
-            this.btnCuotas = new System.Windows.Forms.Button();
+            this.btnInformes = new System.Windows.Forms.Button();
+            this.btnImportar = new System.Windows.Forms.Button();
+            this.btnExportar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtgUsuarios)).BeginInit();
             this.SuspendLayout();
             // 
@@ -64,9 +66,9 @@
             // 
             // btnCrear
             // 
-            this.btnCrear.Location = new System.Drawing.Point(86, 12);
+            this.btnCrear.Location = new System.Drawing.Point(367, 12);
             this.btnCrear.Name = "btnCrear";
-            this.btnCrear.Size = new System.Drawing.Size(126, 49);
+            this.btnCrear.Size = new System.Drawing.Size(88, 49);
             this.btnCrear.TabIndex = 1;
             this.btnCrear.Text = "Crear";
             this.btnCrear.UseVisualStyleBackColor = true;
@@ -74,9 +76,9 @@
             // 
             // btnActualizar
             // 
-            this.btnActualizar.Location = new System.Drawing.Point(359, 12);
+            this.btnActualizar.Location = new System.Drawing.Point(570, 12);
             this.btnActualizar.Name = "btnActualizar";
-            this.btnActualizar.Size = new System.Drawing.Size(126, 49);
+            this.btnActualizar.Size = new System.Drawing.Size(88, 49);
             this.btnActualizar.TabIndex = 2;
             this.btnActualizar.Text = "Actualizar";
             this.btnActualizar.UseVisualStyleBackColor = true;
@@ -84,9 +86,9 @@
             // 
             // btnBorrar
             // 
-            this.btnBorrar.Location = new System.Drawing.Point(491, 12);
+            this.btnBorrar.Location = new System.Drawing.Point(664, 12);
             this.btnBorrar.Name = "btnBorrar";
-            this.btnBorrar.Size = new System.Drawing.Size(126, 49);
+            this.btnBorrar.Size = new System.Drawing.Size(88, 49);
             this.btnBorrar.TabIndex = 3;
             this.btnBorrar.Text = "Borrar";
             this.btnBorrar.UseVisualStyleBackColor = true;
@@ -94,9 +96,9 @@
             // 
             // btnActualizarBase
             // 
-            this.btnActualizarBase.Location = new System.Drawing.Point(227, 12);
+            this.btnActualizarBase.Location = new System.Drawing.Point(461, 12);
             this.btnActualizarBase.Name = "btnActualizarBase";
-            this.btnActualizarBase.Size = new System.Drawing.Size(126, 49);
+            this.btnActualizarBase.Size = new System.Drawing.Size(103, 49);
             this.btnActualizarBase.TabIndex = 4;
             this.btnActualizarBase.Text = "Actualizar Base de datos";
             this.btnActualizarBase.UseVisualStyleBackColor = true;
@@ -239,22 +241,41 @@
             this.btnPrimero.UseVisualStyleBackColor = true;
             this.btnPrimero.Click += new System.EventHandler(this.btnPrimero_Click);
             // 
-            // btnCuotas
+            // btnInformes
             // 
-            this.btnCuotas.Location = new System.Drawing.Point(623, 12);
-            this.btnCuotas.Name = "btnCuotas";
-            this.btnCuotas.Size = new System.Drawing.Size(126, 49);
-            this.btnCuotas.TabIndex = 19;
-            this.btnCuotas.Text = "Tabla Cuotas";
-            this.btnCuotas.UseVisualStyleBackColor = true;
-            this.btnCuotas.Click += new System.EventHandler(this.btnCuotas_Click);
+            this.btnInformes.Location = new System.Drawing.Point(269, 12);
+            this.btnInformes.Name = "btnInformes";
+            this.btnInformes.Size = new System.Drawing.Size(88, 49);
+            this.btnInformes.TabIndex = 19;
+            this.btnInformes.Text = "Informes";
+            this.btnInformes.UseVisualStyleBackColor = true;
+            // 
+            // btnImportar
+            // 
+            this.btnImportar.Location = new System.Drawing.Point(171, 12);
+            this.btnImportar.Name = "btnImportar";
+            this.btnImportar.Size = new System.Drawing.Size(88, 49);
+            this.btnImportar.TabIndex = 20;
+            this.btnImportar.Text = "Importar";
+            this.btnImportar.UseVisualStyleBackColor = true;
+            // 
+            // btnExportar
+            // 
+            this.btnExportar.Location = new System.Drawing.Point(77, 12);
+            this.btnExportar.Name = "btnExportar";
+            this.btnExportar.Size = new System.Drawing.Size(88, 49);
+            this.btnExportar.TabIndex = 21;
+            this.btnExportar.Text = "Exportar";
+            this.btnExportar.UseVisualStyleBackColor = true;
             // 
             // fmrTablaClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(829, 502);
-            this.Controls.Add(this.btnCuotas);
+            this.Controls.Add(this.btnExportar);
+            this.Controls.Add(this.btnImportar);
+            this.Controls.Add(this.btnInformes);
             this.Controls.Add(this.btnPrimero);
             this.Controls.Add(this.btnUltimo);
             this.Controls.Add(this.btnAnterior);
@@ -301,7 +322,9 @@
         private System.Windows.Forms.Button btnAnterior;
         private System.Windows.Forms.Button btnUltimo;
         private System.Windows.Forms.Button btnPrimero;
-        private System.Windows.Forms.Button btnCuotas;
+        private System.Windows.Forms.Button btnInformes;
+        private System.Windows.Forms.Button btnImportar;
+        private System.Windows.Forms.Button btnExportar;
     }
 }
 

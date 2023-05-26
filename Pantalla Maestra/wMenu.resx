@@ -121,7 +121,7 @@
   <data name="img_restaurar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EQAACxEBf2RfkQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAACPUSURBVHhe7d1b
+        EAAACxABrSO9dQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAACPUSURBVHhe7d1b
         rO95WZjxPVUZuFGOnjVpq1RDMBbaJlZSarVgGkeqtTdN47liwEO4q/bGEKw0bYJUsTHxxlMaUWsT2/Qw
         aLSo1TYR0F4pB4sjnpgBNVimAu37Y5C1B55ZzMye3/4+37WeJ/ncvMxs3vXnnfUb9l7rv25ckZ40nju+
         fnzn+NHxs+MN455x33jX+H9JklzieFYcz4zj2XE8Q45nyY+Ml43jGXM8a45nTi3qs8eLx0+Mtw76HzFJ
@@ -317,7 +317,7 @@
   <data name="img_maximizar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wgAADsIBFShKgAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAABWkSURBVHhe7d37
+        wQAADsEBuJFr7QAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAABWkSURBVHhe7d37
         z653VefxDYgtI2DGUVOCkJGk/EYjDM6gTjwkg4OOxkSFtuIJx9N/YDSZhGICWtAfCy3lN4Xg36BRIycR
         h9NEwxiMoUEOdRwdTj14WotMzY75ULvZ+1nrfu7r9UreSdM0abLXd6/nfu77uq77CgAAAAAAAAAAAAAA
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -588,7 +588,7 @@
   <data name="img_barras.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wgAADsIBFShKgAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAzwSURBVHhe7d1P
+        wQAADsEBuJFr7QAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAzwSURBVHhe7d1P
         jpRVFMZhgyMZK64CcQsSXAQkuA8l6DoILkIB58ifsBPSLqAlARM9d+DA5A3phjqeW93PL3nm79eT2/VV
         1VefSJIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIk
         SZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIk

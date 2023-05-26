@@ -22,6 +22,7 @@ namespace Pantalla_Maestra
             InitializeComponent();
         }
 
+        //Metodo que limpia todos los campos y cierra el formulario.
         public void limpiartxt() 
         {
             UsuarioRegistro = string.Empty;

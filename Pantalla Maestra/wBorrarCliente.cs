@@ -60,14 +60,14 @@ namespace Pantalla_Maestra
             }
 
             // Ejecutar la consulta de borrado en la base de datos
-            cmd_sqlite.CommandText = $"DELETE from tblClientes WHERE ID = {id}";
+            cmd_sqlite.CommandText = $"DELETE from tblRegistros WHERE ID = {id}";
             cmd_sqlite.ExecuteNonQuery();
 
             // Cerrar la conexión a la base de datos
             Conexion_sqlite.Close();
 
             // Limpiar el campo de texto
-            txtid.Text = null;
+            txtid.Text = string.Empty;
 
             // Cerrar el formulario
             this.Close();
@@ -92,7 +92,7 @@ namespace Pantalla_Maestra
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             // Limpiar el campo de texto
-            txtid.Text = null;
+            txtid.Text = string.Empty;
 
             // Cerrar el formulario
             this.Close();

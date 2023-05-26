@@ -28,65 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblNombre = new System.Windows.Forms.Label();
-            this.lblApellido = new System.Windows.Forms.Label();
-            this.lblCelular = new System.Windows.Forms.Label();
-            this.lblCorreo = new System.Windows.Forms.Label();
-            this.lblEdad = new System.Windows.Forms.Label();
             this.lblTitulo = new System.Windows.Forms.Label();
-            this.txtNombre = new System.Windows.Forms.TextBox();
-            this.txtApellido = new System.Windows.Forms.TextBox();
+            this.txtTelefono = new System.Windows.Forms.TextBox();
+            this.lblTelefono = new System.Windows.Forms.Label();
             this.txtEdad = new System.Windows.Forms.TextBox();
-            this.txtCelular = new System.Windows.Forms.TextBox();
+            this.lblEdad = new System.Windows.Forms.Label();
+            this.txtApellido = new System.Windows.Forms.TextBox();
+            this.lblApellido = new System.Windows.Forms.Label();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.lblNombre = new System.Windows.Forms.Label();
+            this.txtRol = new System.Windows.Forms.TextBox();
+            this.lblRol = new System.Windows.Forms.Label();
+            this.lblUsuario = new System.Windows.Forms.Label();
+            this.txtContrasena = new System.Windows.Forms.TextBox();
+            this.txtUsuario = new System.Windows.Forms.TextBox();
+            this.lblContrasena = new System.Windows.Forms.Label();
             this.txtCorreo = new System.Windows.Forms.TextBox();
-            this.btnCrearClientes = new System.Windows.Forms.Button();
+            this.lblCorreo = new System.Windows.Forms.Label();
+            this.btnCrear = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // lblNombre
-            // 
-            this.lblNombre.AutoSize = true;
-            this.lblNombre.Location = new System.Drawing.Point(72, 67);
-            this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(56, 16);
-            this.lblNombre.TabIndex = 1;
-            this.lblNombre.Text = "Nombre";
-            // 
-            // lblApellido
-            // 
-            this.lblApellido.AutoSize = true;
-            this.lblApellido.Location = new System.Drawing.Point(71, 105);
-            this.lblApellido.Name = "lblApellido";
-            this.lblApellido.Size = new System.Drawing.Size(57, 16);
-            this.lblApellido.TabIndex = 3;
-            this.lblApellido.Text = "Apellido";
-            // 
-            // lblCelular
-            // 
-            this.lblCelular.AutoSize = true;
-            this.lblCelular.Location = new System.Drawing.Point(72, 182);
-            this.lblCelular.Name = "lblCelular";
-            this.lblCelular.Size = new System.Drawing.Size(49, 16);
-            this.lblCelular.TabIndex = 5;
-            this.lblCelular.Text = "Celular";
-            // 
-            // lblCorreo
-            // 
-            this.lblCorreo.AutoSize = true;
-            this.lblCorreo.Location = new System.Drawing.Point(72, 217);
-            this.lblCorreo.Name = "lblCorreo";
-            this.lblCorreo.Size = new System.Drawing.Size(48, 16);
-            this.lblCorreo.TabIndex = 7;
-            this.lblCorreo.Text = "Correo";
-            // 
-            // lblEdad
-            // 
-            this.lblEdad.AutoSize = true;
-            this.lblEdad.Location = new System.Drawing.Point(80, 144);
-            this.lblEdad.Name = "lblEdad";
-            this.lblEdad.Size = new System.Drawing.Size(40, 16);
-            this.lblEdad.TabIndex = 10;
-            this.lblEdad.Text = "Edad";
             // 
             // lblTitulo
             // 
@@ -94,64 +55,157 @@
             this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitulo.Location = new System.Drawing.Point(147, 19);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(168, 29);
+            this.lblTitulo.Size = new System.Drawing.Size(175, 29);
             this.lblTitulo.TabIndex = 11;
-            this.lblTitulo.Text = "Crear Cliente";
+            this.lblTitulo.Text = "Crear Usuario";
             // 
-            // txtNombre
+            // txtTelefono
             // 
-            this.txtNombre.Location = new System.Drawing.Point(152, 67);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(163, 22);
-            this.txtNombre.TabIndex = 12;
+            this.txtTelefono.Location = new System.Drawing.Point(161, 228);
+            this.txtTelefono.Name = "txtTelefono";
+            this.txtTelefono.Size = new System.Drawing.Size(171, 22);
+            this.txtTelefono.TabIndex = 44;
+            this.txtTelefono.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtEdad_KeyPress);
             // 
-            // txtApellido
+            // lblTelefono
             // 
-            this.txtApellido.Location = new System.Drawing.Point(152, 105);
-            this.txtApellido.Name = "txtApellido";
-            this.txtApellido.Size = new System.Drawing.Size(163, 22);
-            this.txtApellido.TabIndex = 13;
+            this.lblTelefono.AutoSize = true;
+            this.lblTelefono.Location = new System.Drawing.Point(75, 234);
+            this.lblTelefono.Name = "lblTelefono";
+            this.lblTelefono.Size = new System.Drawing.Size(61, 16);
+            this.lblTelefono.TabIndex = 43;
+            this.lblTelefono.Text = "Telefono";
             // 
             // txtEdad
             // 
-            this.txtEdad.Location = new System.Drawing.Point(152, 144);
+            this.txtEdad.Location = new System.Drawing.Point(161, 200);
             this.txtEdad.Name = "txtEdad";
-            this.txtEdad.Size = new System.Drawing.Size(163, 22);
-            this.txtEdad.TabIndex = 14;
+            this.txtEdad.Size = new System.Drawing.Size(171, 22);
+            this.txtEdad.TabIndex = 42;
             this.txtEdad.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtEdad_KeyPress);
             // 
-            // txtCelular
+            // lblEdad
             // 
-            this.txtCelular.Location = new System.Drawing.Point(152, 182);
-            this.txtCelular.Name = "txtCelular";
-            this.txtCelular.Size = new System.Drawing.Size(163, 22);
-            this.txtCelular.TabIndex = 15;
-            this.txtCelular.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtEdad_KeyPress);
+            this.lblEdad.AutoSize = true;
+            this.lblEdad.Location = new System.Drawing.Point(96, 206);
+            this.lblEdad.Name = "lblEdad";
+            this.lblEdad.Size = new System.Drawing.Size(40, 16);
+            this.lblEdad.TabIndex = 41;
+            this.lblEdad.Text = "Edad";
+            // 
+            // txtApellido
+            // 
+            this.txtApellido.Location = new System.Drawing.Point(161, 172);
+            this.txtApellido.Name = "txtApellido";
+            this.txtApellido.Size = new System.Drawing.Size(171, 22);
+            this.txtApellido.TabIndex = 40;
+            // 
+            // lblApellido
+            // 
+            this.lblApellido.AutoSize = true;
+            this.lblApellido.Location = new System.Drawing.Point(81, 178);
+            this.lblApellido.Name = "lblApellido";
+            this.lblApellido.Size = new System.Drawing.Size(57, 16);
+            this.lblApellido.TabIndex = 39;
+            this.lblApellido.Text = "Apellido";
+            // 
+            // txtNombre
+            // 
+            this.txtNombre.Location = new System.Drawing.Point(161, 144);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(171, 22);
+            this.txtNombre.TabIndex = 38;
+            // 
+            // lblNombre
+            // 
+            this.lblNombre.AutoSize = true;
+            this.lblNombre.Location = new System.Drawing.Point(82, 150);
+            this.lblNombre.Name = "lblNombre";
+            this.lblNombre.Size = new System.Drawing.Size(56, 16);
+            this.lblNombre.TabIndex = 37;
+            this.lblNombre.Text = "Nombre";
+            // 
+            // txtRol
+            // 
+            this.txtRol.Location = new System.Drawing.Point(161, 116);
+            this.txtRol.Name = "txtRol";
+            this.txtRol.Size = new System.Drawing.Size(171, 22);
+            this.txtRol.TabIndex = 36;
+            // 
+            // lblRol
+            // 
+            this.lblRol.AutoSize = true;
+            this.lblRol.Location = new System.Drawing.Point(108, 122);
+            this.lblRol.Name = "lblRol";
+            this.lblRol.Size = new System.Drawing.Size(28, 16);
+            this.lblRol.TabIndex = 35;
+            this.lblRol.Text = "Rol";
+            // 
+            // lblUsuario
+            // 
+            this.lblUsuario.AutoSize = true;
+            this.lblUsuario.Location = new System.Drawing.Point(84, 60);
+            this.lblUsuario.Name = "lblUsuario";
+            this.lblUsuario.Size = new System.Drawing.Size(54, 16);
+            this.lblUsuario.TabIndex = 31;
+            this.lblUsuario.Text = "Usuario";
+            // 
+            // txtContrasena
+            // 
+            this.txtContrasena.Location = new System.Drawing.Point(161, 88);
+            this.txtContrasena.Name = "txtContrasena";
+            this.txtContrasena.Size = new System.Drawing.Size(171, 22);
+            this.txtContrasena.TabIndex = 34;
+            // 
+            // txtUsuario
+            // 
+            this.txtUsuario.Location = new System.Drawing.Point(161, 60);
+            this.txtUsuario.Name = "txtUsuario";
+            this.txtUsuario.Size = new System.Drawing.Size(171, 22);
+            this.txtUsuario.TabIndex = 32;
+            // 
+            // lblContrasena
+            // 
+            this.lblContrasena.AutoSize = true;
+            this.lblContrasena.Location = new System.Drawing.Point(62, 94);
+            this.lblContrasena.Name = "lblContrasena";
+            this.lblContrasena.Size = new System.Drawing.Size(76, 16);
+            this.lblContrasena.TabIndex = 33;
+            this.lblContrasena.Text = "Contraseña";
             // 
             // txtCorreo
             // 
-            this.txtCorreo.Location = new System.Drawing.Point(152, 217);
+            this.txtCorreo.Location = new System.Drawing.Point(161, 256);
             this.txtCorreo.Name = "txtCorreo";
-            this.txtCorreo.Size = new System.Drawing.Size(163, 22);
-            this.txtCorreo.TabIndex = 16;
+            this.txtCorreo.Size = new System.Drawing.Size(171, 22);
+            this.txtCorreo.TabIndex = 46;
             // 
-            // btnCrearClientes
+            // lblCorreo
             // 
-            this.btnCrearClientes.Location = new System.Drawing.Point(127, 259);
-            this.btnCrearClientes.Name = "btnCrearClientes";
-            this.btnCrearClientes.Size = new System.Drawing.Size(94, 37);
-            this.btnCrearClientes.TabIndex = 17;
-            this.btnCrearClientes.Text = "Crear";
-            this.btnCrearClientes.UseVisualStyleBackColor = true;
-            this.btnCrearClientes.Click += new System.EventHandler(this.btnCrearClientes_Click);
+            this.lblCorreo.AutoSize = true;
+            this.lblCorreo.Location = new System.Drawing.Point(88, 262);
+            this.lblCorreo.Name = "lblCorreo";
+            this.lblCorreo.Size = new System.Drawing.Size(48, 16);
+            this.lblCorreo.TabIndex = 45;
+            this.lblCorreo.Text = "Correo";
+            // 
+            // btnCrear
+            // 
+            this.btnCrear.Location = new System.Drawing.Point(125, 300);
+            this.btnCrear.Name = "btnCrear";
+            this.btnCrear.Size = new System.Drawing.Size(90, 35);
+            this.btnCrear.TabIndex = 47;
+            this.btnCrear.Text = "Crear";
+            this.btnCrear.UseVisualStyleBackColor = true;
+            this.btnCrear.Click += new System.EventHandler(this.btnCrearClientes_Click);
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(227, 259);
+            this.btnCancelar.Location = new System.Drawing.Point(242, 300);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(94, 37);
-            this.btnCancelar.TabIndex = 18;
-            this.btnCancelar.Text = "Cancerlar";
+            this.btnCancelar.Size = new System.Drawing.Size(90, 35);
+            this.btnCancelar.TabIndex = 48;
+            this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
@@ -159,20 +213,26 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(431, 308);
+            this.ClientSize = new System.Drawing.Size(431, 347);
             this.Controls.Add(this.btnCancelar);
-            this.Controls.Add(this.btnCrearClientes);
+            this.Controls.Add(this.btnCrear);
             this.Controls.Add(this.txtCorreo);
-            this.Controls.Add(this.txtCelular);
-            this.Controls.Add(this.txtEdad);
-            this.Controls.Add(this.txtApellido);
-            this.Controls.Add(this.txtNombre);
-            this.Controls.Add(this.lblTitulo);
-            this.Controls.Add(this.lblEdad);
             this.Controls.Add(this.lblCorreo);
-            this.Controls.Add(this.lblCelular);
+            this.Controls.Add(this.txtTelefono);
+            this.Controls.Add(this.lblTelefono);
+            this.Controls.Add(this.txtEdad);
+            this.Controls.Add(this.lblEdad);
+            this.Controls.Add(this.txtApellido);
             this.Controls.Add(this.lblApellido);
+            this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.lblNombre);
+            this.Controls.Add(this.txtRol);
+            this.Controls.Add(this.lblRol);
+            this.Controls.Add(this.lblUsuario);
+            this.Controls.Add(this.txtContrasena);
+            this.Controls.Add(this.txtUsuario);
+            this.Controls.Add(this.lblContrasena);
+            this.Controls.Add(this.lblTitulo);
             this.Name = "fmrCrearClientes";
             this.Text = "Crear Clientes";
             this.ResumeLayout(false);
@@ -181,18 +241,24 @@
         }
 
         #endregion
-        private System.Windows.Forms.Label lblNombre;
-        private System.Windows.Forms.Label lblApellido;
-        private System.Windows.Forms.Label lblCelular;
-        private System.Windows.Forms.Label lblCorreo;
-        private System.Windows.Forms.Label lblEdad;
         private System.Windows.Forms.Label lblTitulo;
-        private System.Windows.Forms.TextBox txtNombre;
-        private System.Windows.Forms.TextBox txtApellido;
+        private System.Windows.Forms.TextBox txtTelefono;
+        private System.Windows.Forms.Label lblTelefono;
         private System.Windows.Forms.TextBox txtEdad;
-        private System.Windows.Forms.TextBox txtCelular;
+        private System.Windows.Forms.Label lblEdad;
+        private System.Windows.Forms.TextBox txtApellido;
+        private System.Windows.Forms.Label lblApellido;
+        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.Label lblNombre;
+        private System.Windows.Forms.TextBox txtRol;
+        private System.Windows.Forms.Label lblRol;
+        private System.Windows.Forms.Label lblUsuario;
+        private System.Windows.Forms.TextBox txtContrasena;
+        private System.Windows.Forms.TextBox txtUsuario;
+        private System.Windows.Forms.Label lblContrasena;
         private System.Windows.Forms.TextBox txtCorreo;
-        private System.Windows.Forms.Button btnCrearClientes;
+        private System.Windows.Forms.Label lblCorreo;
+        private System.Windows.Forms.Button btnCrear;
         private System.Windows.Forms.Button btnCancelar;
     }
 }

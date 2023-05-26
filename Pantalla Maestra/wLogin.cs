@@ -37,12 +37,6 @@ namespace Login
             fmrRegistro fmrRegistro = new fmrRegistro();
             fmrRegistro.Show();
         }
-
-        // Método para registrar un nuevo usuario al hacer clic en el botón "Registrarse"
-        private void btnRegistrarse_Click(object sender, EventArgs e)
-        {
-        }
-
         // Método para validar el usuario y contraseña al hacer clic en el botón "Iniciar"
         private void btnIniciar_Click(object sender, EventArgs e)
         {

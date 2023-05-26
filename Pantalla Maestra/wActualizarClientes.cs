@@ -17,9 +17,8 @@ namespace Pantalla_Maestra
     public partial class fmrActualizarClientes : Form
     {
         // Variables de clase
-        string Nombre, Apellido, Celular, Correo;
-        int Edad, id;
-
+        string Usuario, Contrasena, Rol, Nombre, Apellido, Telefono, Correo, Edad;
+        int id;
         /// <summary>
         /// Evento que se activa al presionar una tecla en el campo de texto "Edad".
         /// Permite solo la entrada de dígitos en el campo de texto.
@@ -45,6 +44,22 @@ namespace Pantalla_Maestra
         /// Evento que se activa al hacer clic en el botón "Actualizar Clientes".
         /// Actualiza los datos del cliente en la base de datos y cierra el formulario.
         /// </summary>
+        /// 
+        public void limpiartxt()
+        {
+            // Limpiar los campos de texto
+            txtUsuario.Text = string.Empty;
+            txtContrasena.Text = string.Empty;
+            txtRol.Text = string.Empty;
+            txtNombre.Text = string.Empty;
+            txtApellido.Text = string.Empty;
+            txtEdad.Text = string.Empty;
+            txtTelefono.Text = string.Empty;
+            txtCorreo.Text = string.Empty;
+
+            // Cerrar el formulario
+            this.Close();
+        }
         private void btnActualizarClientes_Click(object sender, EventArgs e)
         {
             SQLiteConnection Conexion_sqlite;
@@ -66,34 +81,30 @@ namespace Pantalla_Maestra
             try
             {
                 id = int.Parse(txtid.Text);
+                Usuario = txtUsuario.Text;
+                Contrasena = txtContrasena.Text;
+                Rol = txtRol.Text;
                 Nombre = txtNombre.Text;
                 Apellido = txtApellido.Text;
-                Edad = int.Parse(txtEdad.Text);
-                Celular = txtCelular.Text;
+                Edad = txtEdad.Text;
+                Telefono = txtTelefono.Text;
                 Correo = txtCorreo.Text;
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Las cajas de texto no pueden estar vacías");
+                MessageBox.Show("Los valores no pueden ser nulos. Por favor, llena todos los campos.");
             }
 
+            string RolS = Rol.ToLower();
+
             // Ejecutar la consulta de actualización en la base de datos
-            cmd_sqlite.CommandText = $"UPDATE tblClientes SET Nombre = '{Nombre}', Apellido = '{Apellido}', Edad = '{Edad}', Celular = '{Celular}', Correo = '{Correo}' WHERE ID = '{id}';";
+            cmd_sqlite.CommandText = $"UPDATE tblRegistros SET Usuario = '{Usuario}', Contraseña = '{Contrasena}', Rol = '{RolS}', Nombres = '{Nombre}', Apellidos = '{Apellido}', Edad = '{Edad}', Telefono = '{Telefono}', Correo = '{Correo}' WHERE ID = '{id}';";
             cmd_sqlite.ExecuteNonQuery();
 
             // Cerrar la conexión a la base de datos
             Conexion_sqlite.Close();
 
-            // Limpiar los campos de texto
-            txtid.Text = null;
-            txtNombre.Text = null;
-            txtApellido.Text = null;
-            txtEdad.Text = null;
-            txtCelular.Text = null;
-            txtCorreo.Text = null;
-
-            // Cerrar el formulario
-            this.Close();
+            limpiartxt();
         }
 
         /// <summary>
@@ -102,16 +113,7 @@ namespace Pantalla_Maestra
         /// </summary>
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            // Limpiar los campos de texto
-            txtid.Text = null;
-            txtNombre.Text = null;
-            txtApellido.Text = null;
-            txtEdad.Text = null;
-            txtCelular.Text = null;
-            txtCorreo.Text = null;
-
-            // Cerrar el formulario
-            this.Close();
+            limpiartxt();
         }
     }
 }

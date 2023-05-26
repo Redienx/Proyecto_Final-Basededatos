@@ -50,6 +50,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="wBorrarProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="wBorrarProducto.Designer.cs">
+      <DependentUpon>wBorrarProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="wActualizarProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="wActualizarProducto.Designer.cs">
+      <DependentUpon>wActualizarProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="wCrearProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="wCrearProducto.Designer.cs">
+      <DependentUpon>wCrearProducto.cs</DependentUpon>
+    </Compile>
     <Compile Include="wMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,6 +130,21 @@
     <Compile Include="wTablaCuotas.Designer.cs">
       <DependentUpon>wTablaCuotas.cs</DependentUpon>
     </Compile>
+    <Compile Include="wTablaProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="wTablaProductos.Designer.cs">
+      <DependentUpon>wTablaProductos.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="wBorrarProducto.resx">
+      <DependentUpon>wBorrarProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="wActualizarProducto.resx">
+      <DependentUpon>wActualizarProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="wCrearProducto.resx">
+      <DependentUpon>wCrearProducto.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="wMenu.resx">
       <DependentUpon>wMenu.cs</DependentUpon>
     </EmbeddedResource>
@@ -150,6 +183,9 @@
     </Compile>
     <EmbeddedResource Include="wTablaCuotas.resx">
       <DependentUpon>wTablaCuotas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="wTablaProductos.resx">
+      <DependentUpon>wTablaProductos.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
