@@ -18,7 +18,7 @@ namespace Pantalla_Maestra
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new fmrMenu ());
+            Application.Run(new fmrLogin());
         }
     }
 }
